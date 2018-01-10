@@ -1,6 +1,6 @@
 {
-    "name": "Contacts",
-    "namespace": "Contacts",
+    "name": "public",
+    "namespace": "public",
     "version": "1.0.0.0",
     "framework": "ext",
     "toolkit": "classic",
@@ -64,13 +64,13 @@
     "sass": {
         /**
          * The root namespace to use when mapping *.scss files to classes in the
-         * sass/src and sass/var directories. For example, "Contacs.view.Foo" would
-         * map to "sass/src/view/Foo.scss". If we changed this to "Contacs.view" then
+         * sass/src and sass/var directories. For example, "public.view.Foo" would
+         * map to "sass/src/view/Foo.scss". If we changed this to "public.view" then
          * it would map to "sass/src/Foo.scss". To style classes outside the app's
          * root namespace, change this to "". Doing so would change the mapping of
-         * "Contacs.view.Foo" to "sass/src/Contacs/view/Foo.scss".
+         * "public.view.Foo" to "sass/src/public/view/Foo.scss".
          */
-        "namespace": "Contacts",
+        "namespace": "public",
 
         /**
          * Generated sass source settings
@@ -286,8 +286,16 @@
             "enable": true
         },
         "compressor": {
-            "type": "yui"
+          "type": "yui"
         }
+        /*
+      "compressor" : {
+        "type" : "closure",
+
+        //all other keys are passed as options
+        "ambiguateProperties" : true,
+        "foldConstants"       : true
+    } */
     },
 
     /**
@@ -496,5 +504,5 @@
      * Uniquely generated id for this application, used as prefix for localStorage keys.
      * Normally you should never change this value.
      */
-    "id": "6b25e07a-afd5-45d4-b4c7-c51e7f47fc6f"
+    "id": "022bc940-3040-44cb-b429-4d5736857e7b"
 }
