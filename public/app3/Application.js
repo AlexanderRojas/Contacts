@@ -3,10 +3,10 @@
  * calls Ext.application(). This is the ideal place to handle application launch and
  * initialization details.
  */
-Ext.define('public.Application', {
+Ext.define('Contacts.Application', {
     extend: 'Ext.app.Application',
 
-    name: 'public',
+    name: 'Contacts',
 
     quickTips: false,
     platformConfig: {

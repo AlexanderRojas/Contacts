@@ -1,7 +1,7 @@
-Ext.define('Contacts.model.Base', {
+Ext.define('public.model.Base', {
     extend: 'Ext.data.Model',
 
     schema: {
-        namespace: 'Contacts.model'
+        namespace: 'public.model'
     }
 });
