@@ -14,7 +14,7 @@ class IndexController extends AbstractActionController
         $request->setMethod('GET');
         $request->setUri('https://app.alegra.com/api/v1/contacts/');
         $client = new Client();
-        $client->setAuth('rojjaas@gmail.com', 'df5daef64295ac9b6600');
+        $client->setAuth('', '');
         $response = $client->send($request);
         return $response;
     }
